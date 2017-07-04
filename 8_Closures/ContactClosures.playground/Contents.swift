@@ -58,8 +58,8 @@ printPersonsDetails("Kathyleen", "Mary", "Moon") // "Kathleen Mary Moon - Locati
 // String inputs, Person output
 let createPerson: (String, String, String) -> Person = { given, middle, family in
     let name = PersonName(givenName: given, middleName: middle, familyName: family)
-    let author = Person(name: name)
-    return author
+    let person = Person(name: name)
+    return person
 }
 let melody = createPerson("Melody", "Margaret", "Moon")
 print(melody.displayString) // "Melody Margaret Moon - Location: UK"
